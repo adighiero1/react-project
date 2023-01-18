@@ -2,7 +2,7 @@ import { Component } from "react";
 import "./App.css";
 import Edit from "./components/a";
 import Three from "./components/b";
-
+import FilmsList from "./components/filmsList";
 class App extends Component {
   constructor(props) {
     super(props); //creating constructor
@@ -38,6 +38,7 @@ class App extends Component {
             return <li key={item + idx}>{item}</li>; //for every item i'm returning a list item
           })}
         </ul>
+        <FilmsList />
       </div>
     );
   }
